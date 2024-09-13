@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: lightgray;
+    /* max-width: 350px; */
+    border: 1px double black;
+    border-radius: 15px;
+    padding: 15px;
+    img{
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+    }
+    button{
+        cursor: pointer;
+        border: 1px solid black;
+        width: 100%;
+        background-color: green;
+        transition: 1s;
+        margin-top: auto;
+        &:hover{
+            background-color: gold;
+            
+        }
+    }
+}
